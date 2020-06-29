@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color10);
+    color: white;
+    box-sizing: border-box;
+    transition: 0.2 ease;
+}
+
+
+:root {
+    --color1: #cae8d5; 
+    --color2: #a7afaf; 
+    --color3: #84a9ac; 
+    --color4: #3b6978; 
+    --color5: #204051; 
+    --color6: #e7b2a5; 
+    --color7: #84a9ac; 
+    --color8: #3b6978;
+    --color9: #11222b; 
+    --color10: #19323f;  
+    --color11: #ddd;
+
+}
+
+
+
+
+#navbar {
+    position: absolute;
+    position: fixed;
+    color: #ffffff;
+    font-size: 10px;
+    /* line-height: 2em; */
+    margin:auto;
+    overflow:hidden;
+    margin: 0;
+    right:15px;
+    top: 10px;
+    padding-left: 10px;
+
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* -webkit-filter: blur(8px); */
+    background-color: var(--color10);
+    border-radius: 5px;
+    /* opacity: 0.8; */
+
+}
+#navbar ul {
+    list-style: none;
+    text-align: right;
+    padding-left: 0;
+}
+#navbar li {
+    display:inline;
+    padding-right:10px;
+}
+#navbar a{
+    color: var(--color3);
+    text-decoration: none;
+    font-size: 18px;
+    padding-right:-30px;
+}
+#navbar li a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+
+/* scrollbar */
+/* cool scrollbars at https://codepen.io/akinjide/pen/BpggrZ */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 0px;
+    visibility:hidden;
+}
+*::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    height: 30%;
+    background-image: linear-gradient( var(--color3) 0%, var(--color5) 100%);
+}
+
+
+
+
+
+.hero {
+    height: 100px;
+}
+
+
+/* contains all the boxes */
+.box-container {
+    width:100%;
+    text-align: center;
+    align-content: center;
+    /* border: solid green; */
+    /* background-color: var(--color5); */
+}
+/* each box */
+.box {
+    width: 100%;
+    /* if you want to overlap with vertical pictures */
+    /* height: 400px; */
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* border: solid pink; */
+    /* padding: 0; */
+}
+
+
+.project-text {
+    /* border: solid peru; */
+    margin-left: 2%;
+    margin-right: 2%;
+    /* display: flex; */
+    /* justify-content: stretch; */
+
+}
+.project-title {
+    font-size: 2em;
+    color: var(--color11);
+}
+.project-description {
+    font-size: 1em;
+    color: var(--color3);
+}
+.left {
+    text-align: left;
+    /* padding-left: 0; */
+}
+.right {
+    text-align: right;
+    /* padding-right: 0; */
+}
+
+
+.preview-image {
+    height: 130%;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+.preview-image:hover {
+    box-shadow: 0 0 5px white;
+}
+.preview-image-wide {
+    width: 40%;
+    height: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.btn-link {
+    padding: 10px 0px;
+    border-radius: 10px 3px;
+}
+
+.btns-left {
+    float: left;
+}
+.btns-right {
+    float: right;
+}
+.btn-link ul {
+    list-style: none;
+}
+.btn-link li {
+    display:inline;
+}
+.btn-link a{
+    color: var(--color9);
+    text-decoration: none;
+    font-size: 18px;
+    padding-right:-30px;
+    background: linear-gradient(to bottom right, var(--color3), var(--color4));
+
+    /* border-radius: 10px 3px; */
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+
+}
+.btn-link a:active, .btn-link a:hover, .btn-link a:focus {
+    background: linear-gradient(to bottom right, var(--color4), var(--color3));
+}
+
+
+
+#main-footer {
+    color: var(--color11);
+    font-size: 20px;
+    text-align: center;
+}
+#main-footer a {
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+}
+#main-footer a:hover {
+    text-shadow: 0 0 5px white;
+}
+#main-footer p {
+    margin: 0;
+}
+#main-footer h3 {
+    margin: 0;
+}
+
+
+
+
+/* RESUME */
+
+.resume {
+    width: 40%;
+    width: 600px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px var(--color9);
+}
