@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>James Soole</title>
 </head>
 <body>
     <!-- <div id="blur"></div> -->
     <nav id="navbar">
         <ul>
-            <li><a href=#>Home</a></li>
+            <li><a href="#scrollTopDiv">Home</a></li>
             <li><a href="cv.html">Resume</a></li>
             <!-- <li><a href=#>Projects</a></li> -->
-            <li><a href=#>Contact</a></li>
+            <li><a href="mailto:soole2@illinois.edu">Contact</a></li>
         </ul>
     </nav>
 
-
+    <div id="scrollTopDiv"></div>
     <div class="box-container">
 
         <div class="hero"></div>
@@ -26,7 +28,7 @@
         <!-- MUSIC HAPPINESS -->
         <div class="box">
             <!-- <img src="images/music2.png" class="preview-image "> -->
-            <img src="images/music1.jpg" class="preview-image preview-image-wide">
+            <img src="images/music1.jpg" id="music-happiness-index" class="preview-image preview-image-wide">
 
             <div class="project-text">
                 <div class="project-title left">Music Happiness Index</div>
@@ -53,12 +55,12 @@
                 </div>
             </div>
             <!-- <img src="images/chat3.jpg" class="preview-image"> -->
-            <img src="images/chat1.png" class="preview-image preview-image-wide">
+            <img src="images/chat1.png" id="live-chat-app" class="preview-image preview-image-wide">
         </div>
 
         <!-- DUG -->
         <div class="box">
-            <img src="images/dug1.png" class="preview-image preview-image-wide">
+            <img src="images/dug1.png" id="dug" class="preview-image preview-image-wide">
             <!-- <img src="images/dug1.png" class="preview-image preview-image-wide"> -->
             <div class="project-text">
                 <div class="project-title left">Dug the Talking Dog</div>
@@ -87,13 +89,13 @@
                 <div class="project-description right hidden" >A collection of small JS and CSS projects. A collection of small JS and CSS projects.  </div>
             </div>
             <!-- <img src="images/boxes3.jpg" class="preview-image"> -->
-            <img src="images/boxes3.jpg" class="preview-image preview-image-wide">
+            <img src="images/boxes3.jpg" target="_blank" id="boxes" class="preview-image preview-image-wide">
         </div>
 
 
         <!-- Music Photography Portfolio -->
         <div class="box">
-            <img src="images/music-portfolio1.JPG" class="preview-image preview-image-wide">
+            <img src="images/music-portfolio1.JPG" id="music-portfolio" class="preview-image preview-image-wide">
             <!-- <img src="images/music-portfolio4.JPG" class="preview-image"> -->
             <div class="project-text">
                 <div class="project-title left">Photography Portfolio</div>
@@ -118,6 +120,9 @@
         <h3>contact</h3>
         <p><a href="mailto:soole2@illinois.edu">soole2@illinois.edu</a></p>
     </footer>
+
+
+    <script src="main.js"></script>
     
 </body>
 </html>
@@ -130,13 +135,12 @@
 <!-- resume hyperlink contact -->
 <!-- favicon -->
 <!-- colors I guess -->
-<!-- contacte button scroll to bottom -->
-<!-- link projects pages when applicable -->
 <!-- blurb at top? -->
-<!-- prevew images onclick -->
+<!-- prevew images onclick goes to code/site-->
 
 <!-- deploy chatapp (and revert to working/clean version) -->
 <!-- gitignore for most website files -->
-<!-- scroll to text 'about' and 'protfolio' div in portoflio music -->
-<!-- smooth scroll to top for 'home' in navbar -->
 <!-- photo portfolio lorem -->
+<!-- favicon musicportfolio, boxes, resume -->
+<!-- responsiveness -->
+<!-- boxes backtohome button? -->
