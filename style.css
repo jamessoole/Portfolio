@@ -1,3 +1,7 @@
+/* TODO when adding a project */
+/* add the preview image id to the list in the media query */
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,7 +16,7 @@ body {
 }
 
 
-
+/* variable color palette */
 :root {
     --color1: #cae8d5; 
     --color2: #a7afaf; 
@@ -25,12 +29,11 @@ body {
     --color9: #11222b; 
     --color10: #19323f;  
     --color11: #ddd;
-
 }
 
 
 
-
+/* NAVBAR */
 #navbar {
     position: absolute;
     position: fixed;
@@ -71,7 +74,7 @@ body {
 }
 
 
-/* scrollbar */
+/* SCROLLBAR */
 /* cool scrollbars at https://codepen.io/akinjide/pen/BpggrZ */
 *::-webkit-scrollbar {
     width: 8px;
@@ -99,7 +102,7 @@ body {
 }
 
 
-/* contains all the boxes */
+/* CONTAINS ALL BOXES */
 .box-container {
     width:100%;
     text-align: center;
@@ -107,7 +110,8 @@ body {
     /* border: solid green; */
     /* background-color: var(--color5); */
 }
-/* each box */
+
+/* EACH BOX */
 .box {
     width: 100%;
     /* if you want to overlap with vertical pictures */
@@ -123,14 +127,41 @@ body {
     /* padding: 0; */
 }
 
+/* RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+    .box {
+        flex-direction: column;
+    }
+    #music-happiness-index, #live-chat-app, #dug, #boxes, #music-portfolio {
+        border-radius: 5px;
+        width: 95%;
+    }
+    .preview-image {
+        margin-bottom: 20px;
+        border-radius: 2px;
+        width: 100%;
+    } 
 
+    /* images (child 1) on top, text (child 2) below */
+    /* override preview-image-left/right and project-text-left/right */
+    .box :nth-child(1) { order: 1; }
+    .box :nth-child(2) { order: 2; }
+}
+
+
+/* PROJECT TEXT DESCRIPTIONS */
 .project-text {
     /* border: solid peru; */
     margin-left: 2%;
     margin-right: 2%;
     /* display: flex; */
     /* justify-content: stretch; */
-
+}
+.project-text-left {
+    order: 1;
+}
+.project-text-right {
+    order: 2;
 }
 .project-title {
     font-size: 2em;
@@ -140,6 +171,7 @@ body {
     font-size: 1em;
     color: var(--color3);
 }
+/* these are for aligning text */
 .left {
     text-align: left;
     /* padding-left: 0; */
@@ -149,33 +181,45 @@ body {
     /* padding-right: 0; */
 }
 
-
+/* PREVIEW IMAGES */
 .preview-image {
     height: 130%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 10px;
+    /* border-radius: 5px; */
+
     margin-left: 2%;
     margin-right: 2%;
     box-sizing: border-box;
     transition: 0.2s ease;
     box-shadow: 10px 10px 10px var(--color9);
 }
+.preview-image-left {
+    order: 1;
+}
+.preview-image-right {
+    order: 2;
+}
 .preview-image:hover {
     box-shadow: 0 0 5px white;
 }
 .preview-image-wide {
     width: 40%;
+    /* thtas coolll */
+    /* width: 80%; */
     height: auto;
 }
 
-.hidden {
-    visibility: hidden;
-}
 
+/* SITE/CODE BUTTONS */
 .btn-link {
     padding: 10px 0px;
     border-radius: 10px 3px;
 }
-
+/* weird thing for 'boxes' project */
+.hidden {
+    visibility: hidden;
+}
 .btns-left {
     float: left;
 }
@@ -207,6 +251,8 @@ body {
 
 
 
+
+/* FOOTER */
 #main-footer {
     color: var(--color11);
     font-size: 20px;
@@ -229,21 +275,51 @@ body {
 
 
 
-
+/* ------ */
 /* RESUME */
+/* ------ */
 
-.resume {
-    width: 40%;
+#resume-container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
     width: 600px;
     margin: auto;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px var(--color9);
     animation: appear 0.5s;
+    pointer-events: none;
 }
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 100%;}
+}
+.resume {
+    width: 100%;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px var(--color9);
+}
+.resumeEmailText {
+    pointer-events: all;
+    
+    position: absolute;
+    /* border: solid green; */
+    /* background-color: pink; */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+    text-align: center;
+    line-height: 0.6em;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    background-color: #fff;
+}
+.resumeEmailText a {
+    color: var(--color10);
 }

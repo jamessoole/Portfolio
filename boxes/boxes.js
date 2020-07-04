@@ -18,7 +18,7 @@ github.addEventListener("click", (e) => {
 })
 linkedin.addEventListener("click", (e) => {
     e.target.setAttribute("target", "_blank"); 
-    location.href = "https://www.linkedin.com/in/james-soole-979717193/";  
+    location.href = "https://www.linkedin.com/in/james-soole/";  
 })
 
 

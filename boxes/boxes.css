@@ -7,9 +7,45 @@ body {
 }
 
 
-/* SECTION */
-/* SHARE */
-/* SECTION */
+
+#navbar {
+    color: #ffffff;
+    font-size: 8px;
+    margin:auto;
+    overflow:hidden;
+    margin: 0;
+    top: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: #84a9ac;
+
+}
+#navbar ul {
+    list-style: none;
+    text-align: right;
+    padding-left: 0;
+    padding: 0;
+}
+#navbar li {
+    display:inline;
+    padding-right:10px;
+    padding: 10px;
+    padding-bottom: 10px;
+    line-height: 2em;
+}
+#navbar a{
+    color: var(--color3);
+    text-decoration: none;
+    font-size: 18px;
+    padding-right:-30px;
+    
+}
+#navbar li a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+
+
 
 
 /* contains all the boxes */
@@ -44,6 +80,15 @@ body {
         width: 100%;
     }
 }
+
+
+
+/* SECTION */
+/* SHARE */
+/* SECTION */
+
+
+
 
 
 /* to make share icon smaller */

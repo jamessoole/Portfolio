@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
 
-// make image previews into links
+// make image previews call button links
 
 const  musicHappiness = document.querySelector("#music-happiness-index");
 const  liveChat = document.querySelector("#live-chat-app");
@@ -34,19 +34,17 @@ const  musicPortfolio = document.querySelector("#music-portfolio");
 
 
 musicHappiness.addEventListener("click", (e) => {
-    // doesnt work
-    // e.target.setAttribute("target", "_blank"); 
-    location.href = "music-happiness-index/index.html";  
+    document.querySelector("#musicSite").click();
 });
 liveChat.addEventListener("click", (e) => {
-    location.href = "https://github.com/jamessoole/live-chat-app";  
+    document.querySelector("#chatCode").click();
 });
 dug.addEventListener("click", (e) => {
-    location.href = "https://github.com/jamessoole/Dug";  
+    document.querySelector("#dugCode").click();
 });
 boxes.addEventListener("click", (e) => {
-    location.href = "boxes/boxes.html";  
+    document.querySelector("#boxesSite").click();
 });
 musicPortfolio.addEventListener("click", (e) => {
-    location.href = "music-portfolio/music-portfolio.html";  
+    document.querySelector("#photoSite").click();
 });
