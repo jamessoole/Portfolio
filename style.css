@@ -4,6 +4,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: sans-serif;
 }
 
 body {
@@ -97,10 +99,19 @@ body {
 
 
 .hero {
-    /* TODO: introductory text here */
-    height: 100px;
+    color: var(--color11);
+    /* color: var(--color6); */
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 7%;
+    font-size: 2em;
+    line-height: 0.7em;
+    animation: hero 2s ;
 }
-
+@keyframes hero {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
 
 /* CONTAINS ALL BOXES */
 .box-container {
@@ -257,6 +268,9 @@ body {
     color: var(--color11);
     font-size: 20px;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
 }
 #main-footer a {
     color: white;
@@ -271,6 +285,10 @@ body {
 }
 #main-footer h3 {
     margin: 0;
+}
+#main-footer a {
+    color: var(--color11);
+    font-size: 15px;
 }
 
 
