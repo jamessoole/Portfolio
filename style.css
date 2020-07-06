@@ -118,7 +118,8 @@ body {
 }
 @media screen and (max-width: 500px) {
     .subHeading {
-        font-size: 4.5vw;
+        /* font-size: 4.5vw; */
+        font-size: 0.5em;
     }
 }
 
@@ -358,9 +359,11 @@ body {
 @media screen and (max-width: 600px) {
     #resume-container {
         width: 90%;
+        /* display:block; */
     }
     .resumeEmailText { 
         visibility: hidden;
+        opacity: 0;
         /* top: 14.9%; */
         /* font-size: 2vw; */
 
