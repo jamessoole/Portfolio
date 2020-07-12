@@ -1,5 +1,7 @@
 /* TODO when adding a project */
 /* add the preview image id to the list in the media query */
+/* add event listener in main.js for picture onclick */
+
 
 
 html {
@@ -97,7 +99,6 @@ body {
 
 
 
-
 .hero {
     color: var(--color11);
     /* color: var(--color6); */
@@ -122,6 +123,7 @@ body {
         font-size: 0.5em;
     }
 }
+
 
 
 /* CONTAINS ALL BOXES */
@@ -154,7 +156,7 @@ body {
     .box {
         flex-direction: column;
     }
-    #music-happiness-index, #live-chat-app, #dug, #boxes, #music-portfolio {
+    #music-happiness-index, #live-chat-app, #dug, #boxes, #music-portfolio, #pierce1 {
         border-radius: 5px;
         width: 95%;
     }
@@ -174,8 +176,8 @@ body {
 /* PROJECT TEXT DESCRIPTIONS */
 .project-text {
     /* border: solid peru; */
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
     /* display: flex; */
     /* justify-content: stretch; */
 }
@@ -312,6 +314,9 @@ body {
     position: relative;
     margin-top: 20px;
     display: flex;
+    /* for safari bug to prevent img stretching */
+    align-items: flex-start; /* new */
+    
     width: 600px;
     /* width: 50%; */
     margin: auto;
@@ -366,6 +371,5 @@ body {
         opacity: 0;
         /* top: 14.9%; */
         /* font-size: 2vw; */
-
     }
 }
